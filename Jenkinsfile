@@ -13,7 +13,7 @@ pipeline {
         script {
           dir('env/Dev'){
             sh 'terraform init'
-            sh 'terraform apply'
+            sh 'terraform apply --auto-approve'
             sh 'ls'
           }
         }
