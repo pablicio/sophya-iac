@@ -4,10 +4,10 @@
 **/.terraform/env/Prod*
 # .tfstate files
 
-**/.terraform/env/Dev/.tfstate*
-**/.terraform/env/Prod/*.tfstate*
-**/.terraform/env/Dev/*.tfstate.**
-**/.terraform/env/Prod/*.tfstate*
+env/Dev/.tfstate*
+env/Prod/*.tfstate*
+env/Dev/*.tfstate.**
+env/Prod/*.tfstate*
 *.tfstate
 *.tfstate.*
 
@@ -44,9 +44,21 @@ override.tf.json
 # example: *tfplan*
 
 # Ignore CLI configuration files
-**/.terraform/env/Dev/.terraformrc
+**/env/Dev/.terraformrc
 **/.terraform/env/Prod/.terraformrc
 **/.terraform/env/Dev/terraform.rc
 **/.terraform/env/Prod/terraform.rc
+
+.terraformrc
+terraform.rc
+
+ubuntu-bionic*
+
+
+# Ignore CLI configuration files
+env/Dev/.terraform.lock.hcl
+env/Prod/.terraform.lock.hcl
+.terraform.lock.hcl
+
 .terraformrc
 terraform.rc
