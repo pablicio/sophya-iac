@@ -11,7 +11,7 @@ pipeline {
     stage("Execução do projeto terraform") {
       steps {
         script {
-          dir('src'){
+          dir('src/env/Dev'){
             sh: 'terraform init'
             sh: 'terraform apply'
           }
