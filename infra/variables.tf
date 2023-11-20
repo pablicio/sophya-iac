@@ -2,11 +2,12 @@ variable "regiao_aws" {
   type = string
 }
 variable "chave" {
-  type = string
+    type = string
 }
 variable "instancia" {
   type = string
 }
-variable "grupo_de_seguranca" {
+
+variable "grupoDeSeguranca" {
   type = string
 }
