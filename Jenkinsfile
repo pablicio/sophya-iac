@@ -12,8 +12,9 @@ pipeline {
       steps {
         script {
           dir('src/env/Dev'){
-            sh: 'terraform init'
-            sh: 'terraform apply'
+            sh 'terraform init'
+            sh 'terraform apply'
+            sh 'ls'
           }
         }
       }
