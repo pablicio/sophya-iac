@@ -4,6 +4,7 @@ module "aws-dev" {
   regiao_aws = "us-west-2"
   chave = "IaC-DEV"
   grupoDeSeguranca = "DEV"
+  bucket_name = "tf-storage"
 }
 
 output "IP" {

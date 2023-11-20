@@ -7,7 +7,11 @@ variable "chave" {
 variable "instancia" {
   type = string
 }
-
 variable "grupoDeSeguranca" {
   type = string
 }
+variable "bucket_name" {
+  type = string
+}
+
+
