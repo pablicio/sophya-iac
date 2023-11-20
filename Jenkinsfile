@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Checkout source") {
       steps {
-        git url: 'https://github.com/pablicio/sophya-iac.git', 'main'
+        git branch: 'main', url: 'https://github.com/pablicio/sophya-iac.git'
         sh 'ls'
       }
     }
