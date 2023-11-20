@@ -7,5 +7,14 @@ pipeline {
         sh 'ls'
       }
     }
+
+    stage("Execução do projeto terraform") {
+      script {
+        dir('src'){
+          sh: 'terraform init'
+          sh: 'terraform apply'
+        }
+      }
+    }
   }
 }
